@@ -25,6 +25,7 @@
     "tsc:declaration:watch": "tsc --watch --module commonjs --emitDeclarationOnly",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"strict\": false}' mocha",
     "lint": "eslint --fix --ext .ts src/** tests/**",
+    "lint:fix": "pnpm lint && pnpm format",
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "deps:check": "madge --circular --extensions ts ./"
   },
